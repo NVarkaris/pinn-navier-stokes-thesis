@@ -1,0 +1,92 @@
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+
+# ============================================================
+# Virtual environments
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ============================================================
+# Model checkpoints
+# ============================================================
+
+# Pre-trained models are intentionally not distributed.
+# All checkpoints are generated locally by the training scripts.
+models/*
+!models/README.md
+
+*.pt
+*.pth
+*.ckpt
+
+
+# ============================================================
+# Generated training data and histories
+# ============================================================
+
+stage2_stationary_inverse/histories/
+
+stage1_stationary_forward/stage1_plot_data.npz
+stage2_stationary_inverse/stage2_*_plot_data.npz
+stage3_pulsatile_forward/stage3_plot_data.npz
+
+
+# ============================================================
+# Generated figures and animations
+# ============================================================
+
+stage1_stationary_forward/figures/
+
+stage2_stationary_inverse/figures/
+stage2_stationary_inverse/external_figures/
+
+stage3_pulsatile_forward/figures/
+stage3_pulsatile_forward/animations/
+
+stage4_pulsatile_inverse/figures/
+stage4_pulsatile_inverse/external_figures/
+
+
+# ============================================================
+# Logs and temporary files
+# ============================================================
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+
+
+# ============================================================
+# IDE / editor files
+# ============================================================
+
+.vscode/
+.idea/
+
+
+# ============================================================
+# Operating-system files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
